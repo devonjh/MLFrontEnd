@@ -10,6 +10,8 @@ import minerleague.resources.homeResource;
 
 public class MLWebAppApplication extends Application<MLWebAppConfiguration> {
 
+    private final HibernateBundle
+
     public static void main(final String[] args) throws Exception {
         new MLWebAppApplication().run(args);
     }
