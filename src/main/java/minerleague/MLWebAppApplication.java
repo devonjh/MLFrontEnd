@@ -10,6 +10,7 @@ import io.dropwizard.views.ViewBundle;
 import io.dropwizard.assets.AssetsBundle;
 
 import minerleague.resources.homeResource;
+import minerleague.resources.mapResource;
 
 public class MLWebAppApplication extends Application<MLWebAppConfiguration> {
 
@@ -48,5 +49,6 @@ public class MLWebAppApplication extends Application<MLWebAppConfiguration> {
         //MongoClient mongo = new MongoClient("69.166.49.230", 27017);
         //mongo.getDatabase("admin").createCollection("testCollection");
         environment.jersey().register(new homeResource());
+        environment.jersey().register(new mapResource());
     }
 }

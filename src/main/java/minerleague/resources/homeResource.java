@@ -1,6 +1,6 @@
 package minerleague.resources;
 
-import minerleague.views.homeView;
+import minerleague.views.*;
 
 import io.dropwizard.views.freemarker.*;
 import javax.ws.rs.*;
@@ -18,5 +18,11 @@ public class homeResource {
     @Path("home")
     public homeView fetchHomeView() {
         return new homeView();
+    }
+
+    @GET
+    @Path("map")
+    public mapView fetchMapView() {
+        return new mapView();
     }
 }

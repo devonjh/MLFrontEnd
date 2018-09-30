@@ -57,6 +57,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:8080/map">HeatMap</a>
+            </li>
             <li class="nav-time">
               <a class="nav-link" href="#">Contact</a>
             </li>
