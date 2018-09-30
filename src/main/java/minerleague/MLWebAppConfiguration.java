@@ -11,10 +11,12 @@ import javax.validation.constraints.*;
 
 public class MLWebAppConfiguration extends Configuration {
 
+    /*
     @JsonProperty("mongo")
     protected MongoConfiguration mongo;
 
     public MongoConfiguration getMongo() {
         return mongo;
     }
+    */
 }

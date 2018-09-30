@@ -2,12 +2,11 @@ logging:
   level: INFO
   loggers:
     minerleague: DEBUG
-database:
-  driverClass: org.mysql.Driver
-  user: root
-  password: Jaysio102609!
-  url: jdbc:mysql://localhost:3306/myProfit
-  maxWaitForConnection: 1s
-  minSize: 8
-  maxSize: 32
-  checkConnectionWhileIdle: false
+#mongo:
+  #seeds:
+  #- host: 69.166.49.230
+    #port: 27017
+  #database: admin
+  #credentials:
+    #userName: MLAdmin
+    #password: minerleague1

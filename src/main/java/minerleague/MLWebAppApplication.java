@@ -1,6 +1,8 @@
 package minerleague;
 
 import com.meltmedia.dropwizard.mongo.MongoBundle;
+import com.mongodb.DB;
+import com.mongodb.MongoClient;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -11,7 +13,7 @@ import minerleague.resources.homeResource;
 
 public class MLWebAppApplication extends Application<MLWebAppConfiguration> {
 
-    MongoBundle<MLWebAppConfiguration> mongoBundle;
+    //MongoBundle<MLWebAppConfiguration> mongoBundle;
 
     public static void main(final String[] args) throws Exception {
         new MLWebAppApplication().run(args);
@@ -32,16 +34,19 @@ public class MLWebAppApplication extends Application<MLWebAppConfiguration> {
         //Add the assets bundle so the freemarker templates can access the css and such.
         bootstrap.addBundle(new AssetsBundle());
 
+        /*
         //Add the mongoBundle to hopefully access the mongo database.
         bootstrap.addBundle(mongoBundle = MongoBundle.<MLWebAppConfiguration>builder()
                 .withConfiguration(MLWebAppConfiguration::getMongo)
-                .build());
+                .build());*/
     }
 
     //The main() entry method. Register all resources necessary.
     @Override
     public void run(final MLWebAppConfiguration configuration,
                     final Environment environment) {
+        //MongoClient mongo = new MongoClient("69.166.49.230", 27017);
+        //mongo.getDatabase("admin").createCollection("testCollection");
         environment.jersey().register(new homeResource());
     }
 }
