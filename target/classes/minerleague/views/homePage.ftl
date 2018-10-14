@@ -81,7 +81,43 @@
     </nav>
 
     <!-- Page Content -->
-    <div id="map"></div>
+    <div class="row">
+        <div class="col">
+            <div id="map" style="width:800px;height:600px"></div>
+        </div>
+        <div class="col">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Twitter Handle</th>
+              <th scope="col">Tweet</th>
+              <th scope="col">Probability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>@Jhenna</td>
+              <td>"I hate being sick"</td>
+              <td>0.94216</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+    </div>
     <script>
 
       // This example requires the Visualization library. Include the libraries=visualization
