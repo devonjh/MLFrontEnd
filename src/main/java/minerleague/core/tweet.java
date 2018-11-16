@@ -10,7 +10,7 @@ public class tweet {
     private final float longitude;
 
     //Constructor
-    private tweet(String username, String tweetText, float probability, float latitude, float longitude) {
+    public tweet(String tweetText, String username, float probability, float latitude, float longitude) {
         this.username = username;
         this.tweetText = tweetText;
         this.probability = probability;

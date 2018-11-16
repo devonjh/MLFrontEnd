@@ -42,9 +42,9 @@ public class homeResource {
             try {
                 Statement queryStatement = con.createStatement();
                 ResultSet results = queryStatement.executeQuery("SELECT * FROM processedTweets");
-
                 while(results.next()) {
-                    System.out.println("username: " + results.getString(4));
+                    tweet newTweet = new tweet(results.getString(1), results.getString(2), results.getFloat(3), results.getFloat(4), results.getFloat(5));
+                    tweetList.add(newTweet);
                 }
             }catch(SQLException e) {System.out.println(e.toString());}
 
@@ -55,8 +55,8 @@ public class homeResource {
     @GET
     @Path("home")
     public homeView fetchHomeView() {
-        getRecentTweets();
-        return new homeView();
+        List<tweet> allTweets = getRecentTweets();
+        return new homeView(allTweets);
     }
 
     @GET
