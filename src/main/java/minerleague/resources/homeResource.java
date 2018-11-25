@@ -60,8 +60,9 @@ public class homeResource {
     }
 
     @GET
-    @Path("map")
-    public mapView fetchMapView() {
-        return new mapView();
+    @Path("oneWeek")
+    public oneWeekView fetchOneWeekView() {
+        List<tweet> allTweets = getRecentTweets();
+        return new oneWeekView(allTweets);
     }
 }

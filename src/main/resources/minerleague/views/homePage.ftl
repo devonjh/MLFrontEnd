@@ -47,51 +47,64 @@
             top: 10px;
             z-index: 5;
           }
+          .iframe-container{
+              position: relative;
+              width: 100%;
+              padding-bottom: 35%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+          }
+          .iframe-container > *{
+              display: block;
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              margin: 0;
+              padding: 0;
+              height: 100%;
+              width: 100%;
+          }
         </style>
   </head>
 
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">MinerLeague</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="http://localhost:8080/map">HeatMap</a>
-            </li>
-            <li class="nav-time">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <a class="navbar-brand" href="#">MinerLeague</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="oneWeek">1 Week</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">2 Weeks</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">3 Weeks</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">All Tweets</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
 
     <!-- Page Content -->
-    <div class="row">
-        <div class="col">
-            <div id="map" style="width:800px;height:600px"></div>
+
+    <div class="row h-100">
+        <div class="col-sm-6">
+            <div id="map"></div>
         </div>
-        <div class="col">
+        <div class="col-sm-6">
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">#</th>
+              <th scope="col">Tweet Text</th>
               <th scope="col">Twitter Handle</th>
-              <th scope="col">Tweet</th>
               <th scope="col">Probability</th>
             </tr>
           </thead>
@@ -99,12 +112,15 @@
             <#list tweetList as tweet>
                 <tr>
                     <td>${tweet.tweetText}</td>
+                    <td>${tweet.username}</td>
+                    <td>${tweet.probability}</td>
                 </tr>
             </#list>
           </tbody>
         </table>
         </div>
     </div>
+
     <script>
 
       // This example requires the Visualization library. Include the libraries=visualization
@@ -664,13 +680,16 @@
         ];
       }
     </script>
+
+    <!-- Bootstrap core JavaScript -->
+            <script src="/assets/bootstrap/vendor/jquery/jquery.min.js"></script>
+            <script src="/assets/bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwoGmL8ozftsgLJ1esZPnPCMHqMwoWL6s&libraries=visualization&callback=initMap">
     </script>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
   </body>
 
