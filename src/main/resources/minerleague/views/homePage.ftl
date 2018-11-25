@@ -71,7 +71,7 @@
 
     <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-            <a class="navbar-brand" href="#">MinerLeague</a>
+            <a class="navbar-brand" href="#">MinerLeague (Full Collection)</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -81,13 +81,13 @@
                   <a class="nav-link" href="oneWeek">1 Week</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">2 Weeks</a>
+                  <a class="nav-link" href="twoWeeks">2 Weeks</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">3 Weeks</a>
+                  <a class="nav-link" href="threeWeeks">3 Weeks</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">All Tweets</a>
+                  <a class="nav-link" href="home">All Tweets</a>
                 </li>
               </ul>
             </div>

@@ -1,47 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
   <head>
+
     <meta charset="utf-8">
-    <title>Heatmaps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/bootstrap/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #floating-panel {
-        position: absolute;
-        top: 10px;
-        left: 25%;
-        z-index: 5;
-        background-color: #fff;
-        padding: 5px;
-        border: 1px solid #999;
-        text-align: center;
-        font-family: 'Roboto','sans-serif';
-        line-height: 30px;
-        padding-left: 10px;
-      }
-      #floating-panel {
-        background-color: #fff;
-        border: 1px solid #999;
-        left: 25%;
-        padding: 5px;
-        position: absolute;
-        top: 10px;
-        z-index: 5;
-      }
-    </style>
+          /* Always set the map height explicitly to define the size of the div
+           * element that contains the map. */
+          #map {
+            height: 100%;
+          }
+          /* Optional: Makes the sample page fill the window. */
+          html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+          }
+          #floating-panel {
+            position: absolute;
+            top: 10px;
+            left: 25%;
+            z-index: 5;
+            background-color: #fff;
+            padding: 5px;
+            border: 1px solid #999;
+            text-align: center;
+            font-family: 'Roboto','sans-serif';
+            line-height: 30px;
+            padding-left: 10px;
+          }
+          #floating-panel {
+            background-color: #fff;
+            border: 1px solid #999;
+            left: 25%;
+            padding: 5px;
+            position: absolute;
+            top: 10px;
+            z-index: 5;
+          }
+          .iframe-container{
+              position: relative;
+              width: 100%;
+              padding-bottom: 35%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+          }
+          .iframe-container > *{
+              display: block;
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              margin: 0;
+              padding: 0;
+              height: 100%;
+              width: 100%;
+          }
+        </style>
   </head>
 
   <body>
-    <div id="map"></div>
+
+    <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <a class="navbar-brand" href="#">MinerLeague (Two Weeks)</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="oneWeek">1 Week</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="twoWeeks">2 Weeks</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="threeWeeks">3 Weeks</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="home">All Tweets</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+    <!-- Page Content -->
+
+    <div class="row h-100">
+        <div class="col-sm-6">
+            <div id="map"></div>
+        </div>
+        <div class="col-sm-6">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Tweet Text</th>
+              <th scope="col">Twitter Handle</th>
+              <th scope="col">Probability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <#list tweetList as tweet>
+                <tr>
+                    <td>${tweet.tweetText}</td>
+                    <td>${tweet.username}</td>
+                    <td>${tweet.probability}</td>
+                </tr>
+            </#list>
+          </tbody>
+        </table>
+        </div>
+    </div>
+
     <script>
 
       // This example requires the Visualization library. Include the libraries=visualization
@@ -54,7 +133,6 @@
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
           center: {lat: 37.775, lng: -122.434},
-          mapTypeId: 'satellite'
         });
 
         heatmap = new google.maps.visualization.HeatmapLayer({
@@ -602,8 +680,17 @@
         ];
       }
     </script>
+
+    <!-- Bootstrap core JavaScript -->
+            <script src="/assets/bootstrap/vendor/jquery/jquery.min.js"></script>
+            <script src="/assets/bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwoGmL8ozftsgLJ1esZPnPCMHqMwoWL6s&libraries=visualization&callback=initMap">
     </script>
+
+
+
   </body>
+
 </html>
