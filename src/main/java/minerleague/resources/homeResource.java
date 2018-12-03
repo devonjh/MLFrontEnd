@@ -45,7 +45,27 @@ public class homeResource {
                 Statement queryStatement = con.createStatement();
                 ResultSet results = queryStatement.executeQuery("SELECT * FROM processedTweets");
                 while(results.next()) {
-                    tweet newTweet = new tweet(results.getString(1), results.getString(2), results.getFloat(3), results.getFloat(4), results.getFloat(5));
+                    tweet newTweet = new tweet(results.getString(1), results.getString(2), results.getFloat(3), results.getFloat(4), results.getFloat(5), results.getFloat(6));
+                    tweetList.add(newTweet);
+                }
+            }catch(SQLException e) {System.out.println(e.toString());}
+
+        }
+        return tweetList;
+    }
+
+    public List<tweet> getCurrentDayTweets() {
+        List<tweet> tweetList = new ArrayList<>();
+
+        Connection con = getRemoteConnection();
+
+        //if connection was made, execute query and store values.
+        if (con != null) {
+            try {
+                Statement queryStatement = con.createStatement();
+                ResultSet results = queryStatement.executeQuery("SELECT * FROM processedTweets WHERE DATE(dateAdded) = DATE(NOW());");
+                while(results.next()) {
+                    tweet newTweet = new tweet(results.getString(1), results.getString(2), results.getFloat(3), results.getFloat(4), results.getFloat(5), results.getFloat(6));
                     tweetList.add(newTweet);
                 }
             }catch(SQLException e) {System.out.println(e.toString());}
@@ -65,7 +85,7 @@ public class homeResource {
                 Statement queryStatement = con.createStatement();
                 ResultSet results = queryStatement.executeQuery("SELECT * FROM processedTweets WHERE dateProcessed >= DATE(NOW()) - INTERVAL 7 DAY");
                 while(results.next()) {
-                    tweet newTweet = new tweet(results.getString(1), results.getString(2), results.getFloat(3), results.getFloat(4), results.getFloat(5));
+                    tweet newTweet = new tweet(results.getString(1), results.getString(2), results.getFloat(3), results.getFloat(4), results.getFloat(5), results.getFloat(6));
                     tweetList.add(newTweet);
                 }
             }catch(SQLException e) {System.out.println(e.toString());}
@@ -85,7 +105,7 @@ public class homeResource {
                 Statement queryStatement = con.createStatement();
                 ResultSet results = queryStatement.executeQuery("SELECT * FROM processedTweets WHERE dateProcessed >= DATE(NOW()) - INTERVAL 14 DAY");
                 while(results.next()) {
-                    tweet newTweet = new tweet(results.getString(1), results.getString(2), results.getFloat(3), results.getFloat(4), results.getFloat(5));
+                    tweet newTweet = new tweet(results.getString(1), results.getString(2), results.getFloat(3), results.getFloat(4), results.getFloat(5), results.getFloat(6));
                     tweetList.add(newTweet);
                 }
             }catch(SQLException e) {System.out.println(e.toString());}
@@ -105,7 +125,7 @@ public class homeResource {
                 Statement queryStatement = con.createStatement();
                 ResultSet results = queryStatement.executeQuery("SELECT * FROM processedTweets WHERE dateProcessed >= DATE(NOW()) - INTERVAL 21 DAY");
                 while(results.next()) {
-                    tweet newTweet = new tweet(results.getString(1), results.getString(2), results.getFloat(3), results.getFloat(4), results.getFloat(5));
+                    tweet newTweet = new tweet(results.getString(1), results.getString(2), results.getFloat(3), results.getFloat(4), results.getFloat(5), results.getFloat(6));
                     tweetList.add(newTweet);
                 }
             }catch(SQLException e) {System.out.println(e.toString());}
@@ -114,12 +134,102 @@ public class homeResource {
         return tweetList;
     }
 
+    public List<tweet> getFourWeekTweets() {
+        List<tweet> tweetList = new ArrayList<>();
+
+        Connection con = getRemoteConnection();
+
+        //if connection was made, execute query and store values.
+        if (con != null) {
+            try {
+                Statement queryStatement = con.createStatement();
+                ResultSet results = queryStatement.executeQuery("SELECT * FROM processedTweets WHERE dateProcessed >= DATE(NOW()) - INTERVAL 28 DAY");
+                while(results.next()) {
+                    tweet newTweet = new tweet(results.getString(1), results.getString(2), results.getFloat(3), results.getFloat(4), results.getFloat(5), results.getFloat(6));
+                    tweetList.add(newTweet);
+                }
+            }catch(SQLException e) {System.out.println(e.toString());}
+
+        }
+        return tweetList;
+    }
+
+    public int falsePositives(int days) {
+        Connection con = getRemoteConnection();
+
+        //if connection was made, execute query and store values.
+        if (con != null) {
+            try {
+                Statement queryStatement = con.createStatement();
+                ResultSet results = queryStatement.executeQuery("SELECT SUM(nonSickTweetsProcessed) FROM processedTweets WHERE dateProcessed >= DATE(NOW()) - INTERVAL " + Integer.toString(days) + " DAY");
+                while(results.next()) {
+                    return results.getInt(1);
+                }
+            }catch(SQLException e) {System.out.println(e.toString());}
+
+        }
+        return 0;
+    }
+
+    public int falsePositivesCurrentDay() {
+        Connection con = getRemoteConnection();
+
+        //if connection was made, execute query and store values.
+        if (con != null) {
+            try {
+                Statement queryStatement = con.createStatement();
+                ResultSet results = queryStatement.executeQuery("SELECT SUM(nonSickTweetsProcessed) FROM processedTweets WHERE DATE(dateAdded) = DATE(NOW())");
+                while(results.next()) {
+                    return results.getInt(1);
+                }
+            }catch(SQLException e) {System.out.println(e.toString());}
+
+        }
+        return 0;
+    }
+
+    public int getSickCountCurrentDay() {
+        Connection con = getRemoteConnection();
+
+        //if connection was made, execute query and store values.
+        if (con != null) {
+            try {
+                Statement queryStatement = con.createStatement();
+                ResultSet results = queryStatement.executeQuery("SELECT COUNT(*) FROM processedTweets WHERE DATE(dateAdded) = DATE(NOW())");
+                while(results.next()) {
+                    return results.getInt(1);
+                }
+            }catch(SQLException e) {System.out.println(e.toString());}
+
+        }
+        return 0;
+    }
+
+    public int getSickCount(int days) {
+        Connection con = getRemoteConnection();
+
+        //if connection was made, execute query and store values.
+        if (con != null) {
+            try {
+                Statement queryStatement = con.createStatement();
+                ResultSet results = queryStatement.executeQuery("SELECT COUNT(*) FROM processedTweets WHERE dateProcessed >= DATE(NOW()) - INTERVAL " + Integer.toString(days) + " DAY");
+                while(results.next()) {
+                    return results.getInt(1);
+                }
+            }catch(SQLException e) {System.out.println(e.toString());}
+
+        }
+        return 0;
+    }
+
     /* Methods for the multiple views, and URL's within the web application. */
     @GET
     @Path("home")
     public homeView fetchHomeView() {
-        List<tweet> allTweets = getAllTweets();
-        return new homeView(allTweets);
+        List<tweet> allTweets = getCurrentDayTweets();
+        int fp = falsePositivesCurrentDay();
+        int sickTweets = getSickCountCurrentDay();
+        return new homeView(allTweets, fp, sickTweets);
     }
 
     @GET
