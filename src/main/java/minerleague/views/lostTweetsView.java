@@ -1,22 +1,23 @@
 package minerleague.views;
 
 import io.dropwizard.views.View;
-import minerleague.core.tweet;
+import minerleague.core.noLocationTweet;
 
 import java.util.List;
 
-public class threeWeekView extends View {
-    private final List<tweet> tweetList;
+public class lostTweetsView extends View {
+
+    private final List<noLocationTweet> tweetList;
     private final int fp, sickTweets;
 
-    public threeWeekView(List<tweet> tweets, int fp, int sickTweets) {
-        super("threeWeek.ftl");
+    public lostTweetsView(List<noLocationTweet> tweets, int fp, int sickTweets) {
+        super("lostTweets.ftl");
         this.tweetList = tweets;
         this.fp = fp;
         this.sickTweets = sickTweets;
     }
 
-    public List<tweet> getTweetList() {
+    public List<noLocationTweet> getTweetList() {
         return tweetList;
     }
     public int getFp() { return this.fp; }

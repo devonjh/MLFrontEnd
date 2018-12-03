@@ -102,7 +102,7 @@
                   <a class="nav-link" href="lostTweets">No Location Tweets</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="allTweets">All Tweets</a>
+                  <a class="nav-link" href="allTime">All Tweets</a>
                 </li>
               </ul>
             </div>
@@ -150,8 +150,8 @@
 
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 13,
-          center: {lat: 37.775, lng: -122.434},
+          zoom: 4,
+          center: {lat: 39.8333333, lng: -98.585522},
           mapTypeId: 'satellite',
         });
 

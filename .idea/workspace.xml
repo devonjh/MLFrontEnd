@@ -2,13 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6005213a-bb9e-4bdf-80de-12e88bead8d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/minerleague/core/noLocationTweet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/minerleague/views/allTimeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/minerleague/views/fourWeekView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/minerleague/views/lostTweetsView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/minerleague/views/allTime.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/minerleague/views/fourWeek.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/minerleague/views/lostTweets.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/minerleague/core/tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/minerleague/core/tweet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/minerleague/resources/homeResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/minerleague/resources/homeResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/minerleague/views/homeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/minerleague/views/homeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/minerleague/views/mapView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/minerleague/views/oneWeekView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/minerleague/views/oneWeekView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/minerleague/views/threeWeekView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/minerleague/views/threeWeekView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/minerleague/views/twoWeekView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/minerleague/views/twoWeekView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/minerleague/views/homePage.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/minerleague/views/homePage.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/minerleague/views/oneWeek.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/minerleague/views/oneWeek.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/minerleague/views/threeWeek.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/minerleague/views/threeWeek.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/minerleague/views/twoWeek.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/minerleague/views/twoWeek.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/minerleague/resources/homeResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/minerleague/resources/homeResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/minerleague/views/homePage.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/minerleague/views/homePage.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/minerleague/views/mapView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/minerleague/views/oneWeek.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/minerleague/views/oneWeek.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/minerleague/views/oneWeekView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/minerleague/views/oneWeekView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/minerleague/views/threeWeek.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/minerleague/views/threeWeek.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/minerleague/views/threeWeekView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/minerleague/views/threeWeekView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/minerleague/views/twoWeek.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/minerleague/views/twoWeek.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/minerleague/views/twoWeekView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/minerleague/views/twoWeekView.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,65 +105,49 @@
       <file leaf-file-name="homeView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/views/homeView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="58" lean-forward="true" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+            <state relative-caret-position="135">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="23" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#509#510#0" expanded="true" />
+                <element signature="e#541#542#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homePage.ftl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homePage.ftl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/homePage.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="198" column="57" lean-forward="true" selection-start-line="198" selection-start-column="57" selection-end-line="198" selection-end-column="57" />
+            <state relative-caret-position="319">
+              <caret line="156" lean-forward="true" selection-start-line="156" selection-end-line="156" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homeResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/resources/homeResource.java">
+      <file leaf-file-name="allTime.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/allTime.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="231" column="55" selection-start-line="231" selection-start-column="55" selection-end-line="231" selection-end-column="55" />
+            <state relative-caret-position="283">
+              <caret line="152" column="17" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="fourWeek.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/fourWeek.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+            <state relative-caret-position="1296">
+              <caret line="152" column="17" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="oneWeekView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/views/oneWeekView.java">
+      <file leaf-file-name="fourWeekView.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/views/fourWeekView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tweet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/core/tweet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MLWebAppConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/MLWebAppConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+            <state relative-caret-position="210">
+              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,11 +155,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.yml">
+      <file leaf-file-name="oneWeek.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/oneWeek.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="258">
+              <caret line="152" column="17" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="threeWeek.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/threeWeek.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="152" column="17" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="twoWeek.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/twoWeek.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="154" column="33" lean-forward="true" selection-start-line="154" selection-start-column="33" selection-end-line="154" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lostTweetsView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/views/lostTweetsView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lostTweets.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/lostTweets.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="683">
+              <caret line="120" column="59" lean-forward="true" selection-start-line="120" selection-start-column="59" selection-end-line="120" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -174,6 +216,7 @@
     <findStrings>
       <find>getPoints</find>
       <find>&lt;script&gt;</find>
+      <find>dateProce</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -193,17 +236,24 @@
         <option value="$PROJECT_DIR$/src/main/java/minerleague/MLWebAppApplication.java" />
         <option value="$PROJECT_DIR$/src/main/resources/minerleague/views/heatMap.ftl" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/minerleague/core/tweet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/minerleague/views/homeView.java" />
         <option value="$PROJECT_DIR$/src/main/java/minerleague/views/oneWeekView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/minerleague/views/twoWeekView.java" />
         <option value="$PROJECT_DIR$/src/main/java/minerleague/views/threeWeekView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/minerleague/views/twoWeekView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/minerleague/core/noLocationTweet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/minerleague/views/lostTweetsView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/minerleague/views/allTimeView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/minerleague/resources/homeResource.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/minerleague/views/lostTweets.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/minerleague/views/homePage.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/minerleague/views/allTime.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/minerleague/views/fourWeek.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/minerleague/views/oneWeek.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/minerleague/views/threeWeek.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/minerleague/views/twoWeek.ftl" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/minerleague/core/tweet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/minerleague/resources/homeResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/minerleague/views/homeView.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/minerleague/views/homePage.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/minerleague/views/fourWeekView.java" />
       </list>
     </option>
   </component>
@@ -404,7 +454,7 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39937598" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39820743" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -452,62 +502,27 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/minerleague/resources/homeResource.java</url>
-          <line>120</line>
+          <line>121</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/minerleague/resources/homeResource.java</url>
-          <line>48</line>
+          <line>49</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/minerleague/resources/homeResource.java</url>
+          <line>163</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
       </breakpoints>
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/choropleth.ftl" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/heathmap.ftl" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/views/mapView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/heatMap.ftl" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/core.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.25.1/jersey-server-2.25.1.jar!/org/glassfish/jersey/server/model/internal/AbstractJavaResourceMethodDispatcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.25.1/jersey-server-2.25.1.jar!/org/glassfish/jersey/server/model/internal/ResourceMethodInvocationHandlerFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/MLWebAppApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="51" column="57" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/resources/mapResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -599,6 +614,8 @@
           <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -674,16 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/resources/mapResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -701,76 +708,176 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/views/oneWeekView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/core/tweet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/views/threeWeekView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/core/noLocationTweet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/oneWeek.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="73" column="57" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/threeWeek.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="73" column="57" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/twoWeek.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="66" column="16" lean-forward="true" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+        <state relative-caret-position="315">
+          <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/views/twoWeekView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="165">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/core/tweet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/views/threeWeekView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="225">
+          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding>
+            <element signature="e#512#513#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/resources/homeResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/resources/mapResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="231" column="55" selection-start-line="231" selection-start-column="55" selection-end-line="231" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/views/homeView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="58" lean-forward="true" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+        <state relative-caret-position="120">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/views/oneWeekView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.11/mysql-connector-java-8.0.11.jar!/com/mysql/cj/NativeSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="1057" selection-start-line="1057" selection-end-line="1057" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.11/mysql-connector-java-8.0.11.jar!/com/mysql/cj/jdbc/ConnectionImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="810" selection-start-line="810" selection-end-line="810" />
+          <folding>
+            <element signature="e#6686#6687#0" expanded="true" />
+            <element signature="e#6765#6766#0" expanded="true" />
+            <element signature="e#6818#6819#0" expanded="true" />
+            <element signature="e#6856#6857#0" expanded="true" />
+            <element signature="e#16676#16677#0" expanded="true" />
+            <element signature="e#16718#16719#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/resources/homeResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="162" column="17" lean-forward="true" selection-start-line="162" selection-start-column="17" selection-end-line="162" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/views/allTimeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/views/lostTweetsView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/lostTweets.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="683">
+          <caret line="120" column="59" lean-forward="true" selection-start-line="120" selection-start-column="59" selection-end-line="120" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/views/homeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="23" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/allTime.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="152" column="17" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/homePage.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="198" column="57" lean-forward="true" selection-start-line="198" selection-start-column="57" selection-end-line="198" selection-end-column="57" />
+        <state relative-caret-position="319">
+          <caret line="156" lean-forward="true" selection-start-line="156" selection-end-line="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/oneWeek.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="152" column="17" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/threeWeek.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="152" column="17" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/twoWeek.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="154" column="33" lean-forward="true" selection-start-line="154" selection-start-column="33" selection-end-line="154" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/minerleague/views/fourWeek.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="152" column="17" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/minerleague/views/fourWeekView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

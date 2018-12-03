@@ -5,12 +5,12 @@ import minerleague.core.tweet;
 
 import java.util.List;
 
-public class threeWeekView extends View {
+public class allTimeView extends View {
     private final List<tweet> tweetList;
     private final int fp, sickTweets;
 
-    public threeWeekView(List<tweet> tweets, int fp, int sickTweets) {
-        super("threeWeek.ftl");
+    public allTimeView(List<tweet> tweets, int fp, int sickTweets) {
+        super("allTime.ftl");
         this.tweetList = tweets;
         this.fp = fp;
         this.sickTweets = sickTweets;
